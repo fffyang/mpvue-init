@@ -1,8 +1,8 @@
 <template>
   <div class="container btns">
-    <button class="calbtn" @click="hanleDecrement">-</button>
+    <button class="calbtn p5" @click="hanleDecrement">-</button>
     <span class="calnum">{{count}}</span>
-    <button class="calbtn" @click="hanleIncrement">+</button>
+    <button class="calbtn p5" @click="hanleIncrement">+</button>
   </div>
 </template>
 
@@ -15,7 +15,9 @@ export default {
       return globalStore.state.count
     }
   },
-
+  mounted () {
+    console.log('url', this.$root.$mp.query)
+  },
   methods: {
     hanleIncrement () {
       globalStore.commit('increment')

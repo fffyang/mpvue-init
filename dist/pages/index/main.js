@@ -248,7 +248,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
   }, [_vm._v(_vm._s(_vm.userInfo.nickName))]), _vm._v(" "), _c('div', [_vm._v("计数结果：" + _vm._s(_vm.count))]), _vm._v(" "), _c('a', {
     staticClass: "navlink mt10",
     attrs: {
-      "href": "/pages/test1/main"
+      "href": "/pages/test1/main?test='test'"
     }
   }, [_vm._v("进入计数器页面")]), _vm._v(" "), _c('button', {
     staticClass: "mt10 p10",
@@ -257,7 +257,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     },
     on: {
       "click": function($event) {
-        _vm.routerLink('/pages/test1/main')
+        _vm.routerLink('/pages/test1/main?test=test')
       }
     }
   }, [_vm._v("跳转计数器页面")]), _vm._v(" "), _c('button', {

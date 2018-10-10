@@ -101,6 +101,9 @@ if (false) {(function () {
       return __WEBPACK_IMPORTED_MODULE_0__stores_global_store__["a" /* default */].state.count;
     }
   },
+  mounted: function mounted() {
+    console.log('url', this.$root.$mp.query);
+  },
 
   methods: {
     hanleIncrement: function hanleIncrement() {
@@ -122,7 +125,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
   return _c('div', {
     staticClass: "container btns"
   }, [_c('button', {
-    staticClass: "calbtn",
+    staticClass: "calbtn p5",
     attrs: {
       "eventid": '0'
     },
@@ -132,7 +135,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
   }, [_vm._v("-")]), _vm._v(" "), _c('span', {
     staticClass: "calnum"
   }, [_vm._v(_vm._s(_vm.count))]), _vm._v(" "), _c('button', {
-    staticClass: "calbtn",
+    staticClass: "calbtn p5",
     attrs: {
       "eventid": '1'
     },

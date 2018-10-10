@@ -4,8 +4,8 @@
     <image class="user-logo" :src="userInfo.avatarUrl" mode="widthFix" v-if="userInfo.avatarUrl &&  userInfo.avatarUrl != ''" />
     <p class="text-center mb20">{{userInfo.nickName}}</p>
     <div>计数结果：{{count}}</div>
-    <a class="navlink mt10" href="/pages/test1/main">进入计数器页面</a>
-    <button class="mt10 p10" @click="routerLink('/pages/test1/main')">跳转计数器页面</button>
+    <a class="navlink mt10" href="/pages/test1/main?test='test'">进入计数器页面</a>
+    <button class="mt10 p10" @click="routerLink('/pages/test1/main?test=test')">跳转计数器页面</button>
     <button type="primary" class="mt10 p10" @click="testApi">http测试</button>
     <button type="primary" class="mt10 p10" @click="routerLink('/pages/imgtest/main')">图片测试</button>
   </div>

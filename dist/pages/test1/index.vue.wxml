@@ -1,3 +1,3 @@
 <template name="775c2158">
-  <view class="_div data-v-60519c4d container btns"><button class="_button data-v-60519c4d calbtn" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">-</button> <label class="_span data-v-60519c4d calnum">{{count}}</label> <button class="_button data-v-60519c4d calbtn" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">+</button></view>
+  <view class="_div data-v-60519c4d container btns"><button class="_button data-v-60519c4d calbtn p5" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">-</button> <label class="_span data-v-60519c4d calnum">{{count}}</label> <button class="_button data-v-60519c4d calbtn p5" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">+</button></view>
 </template>
