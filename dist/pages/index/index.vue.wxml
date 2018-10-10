@@ -1,0 +1,7 @@
+<template name="6a12288b">
+  <view class="_div data-v-5307a380 container">
+    <image src="{{userInfo.avatarUrl}}" class="_img data-v-5307a380"></image>
+    <view class="_div data-v-5307a380">计数结果：{{count}}</view>
+    <navigator class="_a data-v-5307a380 navlink mt10" url="/pages/test1/main">进入计数器页面</navigator> <button class="_button data-v-5307a380 mt10 p10" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">跳转计数器页面</button> <button type="primary" class="_button data-v-5307a380 mt10 p10" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">http测试</button>
+  </view>
+</template>

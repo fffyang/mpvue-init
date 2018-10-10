@@ -1,0 +1,9 @@
+
+.container .btns.data-v-60519c4d {
+  display: flex;
+  align-items: center;
+}
+.container .calnum.data-v-60519c4d {
+  color: red;
+  font-size: 64rpx;
+}

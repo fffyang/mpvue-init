@@ -1,0 +1,3 @@
+<import src="/components/ClickCounter.vue.wxml" />
+<template name="data-v-5307a380-default-0">
+  <checkbox class="_input data-v-5307a380" /> 禁用 </template>

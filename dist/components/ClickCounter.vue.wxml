@@ -1,0 +1,5 @@
+<import src="/components/slots" /><template name="561a7a8e">
+  <view class="_div data-v-4be329c3 click-counter"><template name="default"></template>
+    <view class="_div data-v-4be329c3 counter-num">次数：{{num}}</view> <button class="_button data-v-4be329c3 counter-btn" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">点我呀！</button> <button class="_button data-v-4be329c3 counter-reset-btn" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">清零</button> <template data="{{...$root[$k], $root}}" is="{{$slotdefault || 'default'}}"></template>
+  </view>
+</template>
