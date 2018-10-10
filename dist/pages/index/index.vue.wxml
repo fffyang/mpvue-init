@@ -1,6 +1,6 @@
 <template name="6a12288b">
   <view class="_div data-v-5307a380 container"><button class="_button data-v-5307a380 p10" open-type="getUserInfo" bindgetuserinfo="handleProxy" wx:if="{{!isAgree}}" data-eventid="{{'0'}}" data-comkey="{{$k}}">获取权限</button>
-    <image class="_image data-v-5307a380 user-logo" src="{{userInfo.avatarUrl}}" mode="widthFix"></image>
+    <image class="_image data-v-5307a380 user-logo" src="{{userInfo.avatarUrl}}" mode="widthFix" wx:if="{{userInfo.avatarUrl &&  userInfo.avatarUrl != ''}}"></image>
     <view class="_p data-v-5307a380 text-center mb20">{{userInfo.nickName}}</view>
     <view class="_div data-v-5307a380">计数结果：{{count}}</view>
     <navigator class="_a data-v-5307a380 navlink mt10" url="/pages/test1/main">进入计数器页面</navigator> <button class="_button data-v-5307a380 mt10 p10" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">跳转计数器页面</button> <button type="primary" class="_button data-v-5307a380 mt10 p10" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">http测试</button> <button type="primary" class="_button data-v-5307a380 mt10 p10" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">图片测试</button>

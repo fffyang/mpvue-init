@@ -15,13 +15,11 @@ export default {
 @import "./utils/style.css";
 
 .container {
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 0;
-  box-sizing: border-box;
+  justify-content: flex-start;
 }
 /* this rule will be remove */
 * {

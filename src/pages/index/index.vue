@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <button class="p10" open-type="getUserInfo" @getuserinfo="bindGetUserInfo" v-if="!isAgree">获取权限</button>
-    <image class="user-logo" :src="userInfo.avatarUrl" mode="widthFix"></image>
+    <image class="user-logo" :src="userInfo.avatarUrl" mode="widthFix" v-if="userInfo.avatarUrl &&  userInfo.avatarUrl != ''" />
     <p class="text-center mb20">{{userInfo.nickName}}</p>
     <div>计数结果：{{count}}</div>
     <a class="navlink mt10" href="/pages/test1/main">进入计数器页面</a>
@@ -17,11 +17,9 @@ import globalStore from '../../stores/global-store'
 export default {
   data: function () {
     return {
-      userInfo: {
-        avatarUrl: ''
-      },
+      userInfo: {},
       code: '',
-      isAgree: false
+      isAgree: true
     }
   },
   onLoad () {
@@ -60,6 +58,7 @@ export default {
               }
             })
           } else {
+            this.isAgree = false
             console.log('用户还未授权过')
           }
         }

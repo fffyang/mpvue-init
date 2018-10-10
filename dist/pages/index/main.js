@@ -109,11 +109,9 @@ if (false) {(function () {
 /* harmony default export */ __webpack_exports__["a"] = ({
   data: function data() {
     return {
-      userInfo: {
-        avatarUrl: ''
-      },
+      userInfo: {},
       code: '',
-      isAgree: false
+      isAgree: true
     };
   },
   onLoad: function onLoad() {
@@ -156,6 +154,7 @@ if (false) {(function () {
               }
             });
           } else {
+            _this.isAgree = false;
             console.log('用户还未授权过');
           }
         }
@@ -238,13 +237,13 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     on: {
       "getuserinfo": _vm.bindGetUserInfo
     }
-  }, [_vm._v("获取权限")]) : _vm._e(), _vm._v(" "), _c('image', {
+  }, [_vm._v("获取权限")]) : _vm._e(), _vm._v(" "), (_vm.userInfo.avatarUrl && _vm.userInfo.avatarUrl != '') ? _c('image', {
     staticClass: "user-logo",
     attrs: {
       "src": _vm.userInfo.avatarUrl,
       "mode": "widthFix"
     }
-  }), _vm._v(" "), _c('p', {
+  }) : _vm._e(), _vm._v(" "), _c('p', {
     staticClass: "text-center mb20"
   }, [_vm._v(_vm._s(_vm.userInfo.nickName))]), _vm._v(" "), _c('div', [_vm._v("计数结果：" + _vm._s(_vm.count))]), _vm._v(" "), _c('a', {
     staticClass: "navlink mt10",
