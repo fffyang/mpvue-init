@@ -30,10 +30,8 @@ export default {
 
 <style lang="scss" scoped>
 .container{
-  .btns {
-    display: flex;
-    align-items: center;
-  }
+  display: flex;
+  align-items: center;
   .calnum {
     color: red;
     font-size: 32px;

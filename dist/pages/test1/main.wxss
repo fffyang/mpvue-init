@@ -1,5 +1,5 @@
 
-.container .btns.data-v-60519c4d {
+.container.data-v-60519c4d {
   display: flex;
   align-items: center;
 }

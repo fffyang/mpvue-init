@@ -1,4 +1,7 @@
 
-.navlink.data-v-5307a380 {
+.container .user-logo.data-v-5307a380 {
+  width: 264rpx;
+}
+.container .navlink.data-v-5307a380 {
   text-decoration: underline;
 }
