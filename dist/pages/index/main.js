@@ -1,15 +1,109 @@
 require("../../common/manifest.js");
 require("../../common/vendor.js");
-global.webpackJsonp([3],{
+global.webpackJsonp([4],{
 
-/***/ 94:
+/***/ 100:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "container"
+  }, [_c('div', [_vm._v("计数结果：" + _vm._s(_vm.count))]), _vm._v(" "), _c('a', {
+    staticClass: "navlink mt10",
+    attrs: {
+      "href": "/pages/test1/main?test='test'"
+    }
+  }, [_vm._v("进入计数器页面")]), _vm._v(" "), _c('button', {
+    staticClass: "mt10 p10",
+    attrs: {
+      "eventid": '0'
+    },
+    on: {
+      "click": function($event) {
+        _vm.routerLink('/pages/test1/main?test=test')
+      }
+    }
+  }, [_vm._v("跳转计数器页面")]), _vm._v(" "), _c('button', {
+    staticClass: "mt10 p10",
+    attrs: {
+      "type": "primary",
+      "eventid": '1'
+    },
+    on: {
+      "click": _vm.testApi
+    }
+  }, [_vm._v("http测试")]), _vm._v(" "), _c('button', {
+    staticClass: "mt10 p10",
+    attrs: {
+      "type": "primary",
+      "eventid": '2'
+    },
+    on: {
+      "click": function($event) {
+        _vm.routerLink('/pages/imgtest/main')
+      }
+    }
+  }, [_vm._v("拍照及图片测试")]), _vm._v(" "), _c('button', {
+    staticClass: "mt10 p10",
+    attrs: {
+      "type": "primary",
+      "eventid": '3'
+    },
+    on: {
+      "click": function($event) {
+        _vm.routerLink('/pages/weui/main')
+      }
+    }
+  }, [_vm._v("weui测试")]), _vm._v(" "), _c('button', {
+    staticClass: "mt10 p10",
+    attrs: {
+      "type": "primary",
+      "eventid": '4'
+    },
+    on: {
+      "click": _vm.openCode
+    }
+  }, [_vm._v("扫一扫")]), _vm._v(" "), (!_vm.isAgree) ? _c('button', {
+    staticClass: "mt20 p10",
+    attrs: {
+      "open-type": "getUserInfo",
+      "eventid": '5'
+    },
+    on: {
+      "getuserinfo": _vm.bindGetUserInfo
+    }
+  }, [_vm._v("获取权限")]) : _vm._e(), _vm._v(" "), (_vm.userInfo.avatarUrl && _vm.userInfo.avatarUrl != '') ? _c('image', {
+    staticClass: "user-logo",
+    attrs: {
+      "src": _vm.userInfo.avatarUrl,
+      "mode": "widthFix"
+    }
+  }) : _vm._e(), _vm._v(" "), _c('p', {
+    staticClass: "text-center mb20"
+  }, [_vm._v(_vm._s(_vm.userInfo.nickName))])], 1)
+}
+var staticRenderFns = []
+render._withStripped = true
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-5307a380", esExports)
+  }
+}
+
+/***/ }),
+
+/***/ 95:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index__ = __webpack_require__(96);
 
 
 
@@ -18,18 +112,18 @@ app.$mount();
 
 /***/ }),
 
-/***/ 95:
+/***/ 96:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_lib_selector_type_script_index_0_index_vue__ = __webpack_require__(97);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_lib_template_compiler_index_id_data_v_5307a380_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_node_modules_mpvue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_lib_selector_type_script_index_0_index_vue__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_lib_template_compiler_index_id_data_v_5307a380_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_node_modules_mpvue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(100);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(96)
+  __webpack_require__(97)
 }
-var normalizeComponent = __webpack_require__(9)
+var normalizeComponent = __webpack_require__(6)
 /* script */
 
 /* template */
@@ -72,14 +166,14 @@ if (false) {(function () {
 
 /***/ }),
 
-/***/ 96:
+/***/ 97:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 97:
+/***/ 98:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -90,6 +184,9 @@ if (false) {(function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__stores_global_store__ = __webpack_require__(41);
 
 
+//
+//
+//
 //
 //
 //
@@ -210,6 +307,13 @@ if (false) {(function () {
           }
         }, _callee, _this3);
       }))();
+    },
+    openCode: function openCode() {
+      wx.scanCode({
+        success: function success(res) {
+          console.log(res);
+        }
+      });
     }
   },
   computed: {
@@ -219,81 +323,7 @@ if (false) {(function () {
   }
 });
 
-/***/ }),
-
-/***/ 99:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "container"
-  }, [(!_vm.isAgree) ? _c('button', {
-    staticClass: "p10",
-    attrs: {
-      "open-type": "getUserInfo",
-      "eventid": '0'
-    },
-    on: {
-      "getuserinfo": _vm.bindGetUserInfo
-    }
-  }, [_vm._v("获取权限")]) : _vm._e(), _vm._v(" "), (_vm.userInfo.avatarUrl && _vm.userInfo.avatarUrl != '') ? _c('image', {
-    staticClass: "user-logo",
-    attrs: {
-      "src": _vm.userInfo.avatarUrl,
-      "mode": "widthFix"
-    }
-  }) : _vm._e(), _vm._v(" "), _c('p', {
-    staticClass: "text-center mb20"
-  }, [_vm._v(_vm._s(_vm.userInfo.nickName))]), _vm._v(" "), _c('div', [_vm._v("计数结果：" + _vm._s(_vm.count))]), _vm._v(" "), _c('a', {
-    staticClass: "navlink mt10",
-    attrs: {
-      "href": "/pages/test1/main?test='test'"
-    }
-  }, [_vm._v("进入计数器页面")]), _vm._v(" "), _c('button', {
-    staticClass: "mt10 p10",
-    attrs: {
-      "eventid": '1'
-    },
-    on: {
-      "click": function($event) {
-        _vm.routerLink('/pages/test1/main?test=test')
-      }
-    }
-  }, [_vm._v("跳转计数器页面")]), _vm._v(" "), _c('button', {
-    staticClass: "mt10 p10",
-    attrs: {
-      "type": "primary",
-      "eventid": '2'
-    },
-    on: {
-      "click": _vm.testApi
-    }
-  }, [_vm._v("http测试")]), _vm._v(" "), _c('button', {
-    staticClass: "mt10 p10",
-    attrs: {
-      "type": "primary",
-      "eventid": '3'
-    },
-    on: {
-      "click": function($event) {
-        _vm.routerLink('/pages/imgtest/main')
-      }
-    }
-  }, [_vm._v("图片测试")])], 1)
-}
-var staticRenderFns = []
-render._withStripped = true
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-5307a380", esExports)
-  }
-}
-
 /***/ })
 
-},[94]);
+},[95]);
 //# sourceMappingURL=main.js.map

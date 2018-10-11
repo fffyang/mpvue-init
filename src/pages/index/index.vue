@@ -1,13 +1,16 @@
 <template>
   <div class="container">
-    <button class="p10" open-type="getUserInfo" @getuserinfo="bindGetUserInfo" v-if="!isAgree">获取权限</button>
-    <image class="user-logo" :src="userInfo.avatarUrl" mode="widthFix" v-if="userInfo.avatarUrl &&  userInfo.avatarUrl != ''" />
-    <p class="text-center mb20">{{userInfo.nickName}}</p>
     <div>计数结果：{{count}}</div>
     <a class="navlink mt10" href="/pages/test1/main?test='test'">进入计数器页面</a>
     <button class="mt10 p10" @click="routerLink('/pages/test1/main?test=test')">跳转计数器页面</button>
     <button type="primary" class="mt10 p10" @click="testApi">http测试</button>
-    <button type="primary" class="mt10 p10" @click="routerLink('/pages/imgtest/main')">图片测试</button>
+    <button type="primary" class="mt10 p10" @click="routerLink('/pages/imgtest/main')">拍照及图片测试</button>
+    <button type="primary" class="mt10 p10" @click="routerLink('/pages/weui/main')">weui测试</button>
+    <button type="primary" class="mt10 p10" @click="openCode">扫一扫</button>
+
+    <button class="mt20 p10" open-type="getUserInfo" @getuserinfo="bindGetUserInfo" v-if="!isAgree">获取权限</button>
+    <image class="user-logo" :src="userInfo.avatarUrl" mode="widthFix" v-if="userInfo.avatarUrl &&  userInfo.avatarUrl != ''" />
+    <p class="text-center mb20">{{userInfo.nickName}}</p>
   </div>
 </template>
 
@@ -23,9 +26,6 @@ export default {
     }
   },
   onLoad () {
-    this.getUserInfo()
-  },
-  mounted () {
     this.getSetting()
   },
   methods: {
@@ -39,6 +39,7 @@ export default {
         this.isAgree = true
         // 用户按了允许授权按钮
         console.log('用户按了允许授权按钮')
+        this.getUserInfo()
       } else {
         // 用户按了拒绝按钮
         console.log('用户按了拒绝按钮')
@@ -55,6 +56,7 @@ export default {
                 console.log(res.userInfo)
                 // 用户已经授权过
                 console.log('用户已经授权过')
+                this.getUserInfo()
               }
             })
           } else {
@@ -89,6 +91,13 @@ export default {
         grant_type: 'authorization_code'
       })
       console.log('userKey', datas)
+    },
+    openCode () {
+      wx.scanCode({
+        success: (res) => {
+          console.log(res)
+        }
+      })
     }
   },
   computed: {

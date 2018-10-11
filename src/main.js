@@ -3,6 +3,7 @@ import App from './App'
 
 import { api } from '@/utils/http'
 import { newData, getDifferent } from '@/utils/public'
+import '@/utils/weui.css'
 
 Vue.prototype.$get = api.get
 Vue.prototype.$post = api.post

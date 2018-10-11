@@ -1,0 +1,15 @@
+<template name="5e11439f">
+  <view class="_div data-v-2c93d3ec page">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" bindchange="handleProxy" bindanimationfinish="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_swiper data-v-2c93d3ec">
+      <view wx:key="index" key="{{index}}" wx:for="{{imgUrls}}" wx:for-index="index" wx:for-item="item" class="_div data-v-2c93d3ec">
+        <swiper-item class="_swiper-item data-v-2c93d3ec">
+          <image src="{{item}}" class="_image data-v-2c93d3ec slide-image"></image>
+        </swiper-item>
+      </view>
+    </swiper>
+    <picker class="_picker data-v-2c93d3ec weui-btn mt20" mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"><button type="default" class="_button data-v-2c93d3ec">时间选择器</button></picker>
+    <switch class="_switch data-v-2c93d3ec mt20" checked bindchange="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" />
+    <checkbox class="_checkbox data-v-2c93d3ec mt20" value="{{check.value}}" checked="{{check.checked}}" />
+    <radio class="_radio data-v-2c93d3ec mt20" value="{{check.value}}" checked="{{check.checked}}" />
+  </view>
+</template>

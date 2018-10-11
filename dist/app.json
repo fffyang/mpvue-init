@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/main",
     "pages/test1/main",
-    "pages/imgtest/main"
+    "pages/imgtest/main",
+    "pages/weui/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
